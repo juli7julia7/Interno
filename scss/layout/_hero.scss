@@ -1,0 +1,55 @@
+.hero {
+    background: url(img/hero/main.jpg) no-repeat center top / cover;
+    border-radius: 0px 0px 0px 290px;
+    height: 100vh;
+    width: 100vw;
+
+    &__container {
+        padding-top: 188px;
+        padding-bottom: 260px;
+    }
+
+    &__title {
+        color: var(--dark-color);
+        font-family: "DM Serif Display";
+        font-size: 80px;
+        line-height: 1.2;
+        letter-spacing: 0.22px;
+        margin-bottom: 20px;
+
+        @media(min-width:991.98px) {
+            max-width: 595px;
+        }
+
+        @media(max-width:991.98px) {
+            font-size: 60px;
+        }
+
+        @media(max-width:479.98px) {
+            font-size: 50px;
+        }
+    }
+
+    &__text {
+        line-height: 1.5;
+        letter-spacing: 0.22px;
+        margin-bottom: 35px;
+
+        @media(min-width:991.98px) {
+            max-width: 570px;
+        }
+
+        @media(max-width:991.98px) {
+            color: #000;
+            margin-bottom: 30px;
+        }
+
+        @media(max-width:991.98px) {
+            margin-bottom: 25px;
+        }
+    }
+
+    &__button {}
+
+    &__button-text {}
+}

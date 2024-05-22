@@ -1,0 +1,135 @@
+.header {
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 26px;
+        padding-bottom: 26px;
+    }
+
+    &__logo {
+        position: relative;
+        z-index: 5;
+    }
+
+    &__menu {}
+}
+
+.menu {
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 40px;
+
+        @media(max-width:991.98px) {
+            column-gap: 30px;
+        }
+    }
+
+    &__item {}
+
+    &__link {
+        color: var(--dark-color);
+        font-size: 19px;
+        line-height: 1.57;
+        position: relative;
+        transition: color 0.3s;
+
+        &:hover {
+            color: var(--brand-color);
+        }
+    }
+}
+
+.icon-menu {
+    display: none;
+}
+
+@media(max-width:767.98px) {
+    .icon-menu {
+        display: block;
+        flex: 0 0 30px;
+        height: 18px;
+        position: relative;
+    }
+
+    .icon-menu span,
+    .icon-menu::before,
+    .icon-menu::after {
+        position: absolute;
+        content: '';
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #000;
+    }
+
+    .icon-menu::before {
+        top: 0;
+    }
+
+    .icon-menu::after {
+        bottom: 0;
+    }
+
+    .icon-menu span {
+        top: calc(50% - 1px);
+    }
+
+    .menu__body {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: #e4d4c2;
+        padding: 150px 30px 50px 30px;
+        transition: left 0.3s ease 0s;
+    }
+    .menu-open .menu__body{
+        left: 0;
+    }
+
+    .menu-open .icon-menu span{
+        width: 0;
+    }
+
+    .menu-open .icon-menu::before{
+        top: calc(50% - 1px);
+        transform: rotate(45deg);
+    }
+    .menu-open .icon-menu::after{
+        top: calc(50% - 1px);
+        transform: rotate(-45deg);
+    }
+    .menu-open .button{
+        position: relative;
+        z-index: -1;
+    }
+
+    .menu__list {
+        flex-direction: column;
+        row-gap: 30px;
+        align-items: center;
+    }
+    .menu__link{
+        font-size: 40px;
+    }
+}
+
+// .menu__link{
+//     position: relative;
+//     transition: background-color 12s;
+// }
+
+// .menu__link:hover::before{
+//     content: "";
+//     position: absolute;
+//     bottom: -3px;
+//     left: 0;
+//     width: 100%;
+//     height: 2px;
+//     background-color: var(--brand-color);
+// }

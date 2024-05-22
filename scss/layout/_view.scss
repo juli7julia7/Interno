@@ -1,0 +1,79 @@
+.view {
+    &__container {
+        padding-top: 100px;
+        padding-bottom: 100px;
+
+        @media(max-width:991.98px) {
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+        @media(max-width:991.98px) {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+    }
+
+    &__title {
+        display: none;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(auto, 400px));
+        justify-content: center;
+        // column-gap: 93px;
+        row-gap: 20px;
+    }
+
+    &__item {
+        padding: 70px 42px 40px 42px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: 395px;
+
+        @media(max-width:1229.98px) {
+            padding: 50px 42px 30px 42px;
+            height: 330px;
+        }
+    }
+}
+
+.item-view {
+    &__title {
+        font-family: "DM Serif Display";
+        color: var(--dark-color);
+        font-size: 25px;
+        line-height: 1.5;
+        letter-spacing: 0.22px;
+        margin-bottom: 18px;
+    }
+
+    &__text {
+        line-height: 1.5;
+        letter-spacing: 0.22px;
+        flex-grow: 1;
+        // margin-bottom: 30px;
+    }
+
+    &__link {}
+}
+
+.link-item-view {
+    // position: relative;
+    // top: 0;
+    display: flex;
+    gap: 10px;
+    margin: 0 auto;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+
+    &:hover {
+        transform: translateY(-10px);
+        // top: -10px;
+    }
+
+    &__text {}
+
+    &__img {}
+}

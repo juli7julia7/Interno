@@ -221,6 +221,68 @@ body {
     margin-bottom: 25px;
   }
 }
+.view__container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+@media (max-width: 991.98px) {
+  .view__container {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
+@media (max-width: 991.98px) {
+  .view__container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+.view__title {
+  display: none;
+}
+.view__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(auto, 400px));
+  justify-content: center;
+  row-gap: 20px;
+}
+.view__item {
+  padding: 70px 42px 40px 42px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 395px;
+}
+@media (max-width: 1229.98px) {
+  .view__item {
+    padding: 50px 42px 30px 42px;
+    height: 330px;
+  }
+}
+
+.item-view__title {
+  font-family: "DM Serif Display";
+  color: var(--dark-color);
+  font-size: 25px;
+  line-height: 1.5;
+  letter-spacing: 0.22px;
+  margin-bottom: 18px;
+}
+.item-view__text {
+  line-height: 1.5;
+  letter-spacing: 0.22px;
+  flex-grow: 1;
+}
+.link-item-view {
+  display: flex;
+  gap: 10px;
+  margin: 0 auto;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+.link-item-view:hover {
+  transform: translateY(-10px);
+}
 .button {
   display: flex;
   align-items: center;

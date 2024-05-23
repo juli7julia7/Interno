@@ -4,9 +4,20 @@
     height: 100vh;
     width: 100vw;
 
+    @media(max-width:991.98px) {
+        border-radius: 0px 0px 0px 200px;
+    }
+    @media(max-width:991.98px) {
+        border-radius: 0px 0px 0px 100px;
+    }
+
     &__container {
         padding-top: 188px;
         padding-bottom: 260px;
+    }
+
+    &__wrapper-content {
+        animation: view 2s 1 ease;
     }
 
     &__title {
@@ -16,6 +27,7 @@
         line-height: 1.2;
         letter-spacing: 0.22px;
         margin-bottom: 20px;
+
 
         @media(min-width:991.98px) {
             max-width: 595px;
@@ -52,4 +64,16 @@
     &__button {}
 
     &__button-text {}
+}
+
+
+
+@keyframes view {
+    0% {
+        transform: translateX(-1000px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
 }

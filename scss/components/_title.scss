@@ -1,0 +1,14 @@
+.title {
+    color: var(--dark-color);
+    font-family: "DM Serif Display";
+    font-size: 45px;
+    line-height: 1.2;
+    letter-spacing: 0.22px;
+    @media(max-width:991.98px){
+        font-size: 38px;
+    }
+}
+
+.title--center{
+    text-align: center;
+}

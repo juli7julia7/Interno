@@ -554,6 +554,105 @@ body {
   max-width: 100%;
 }
 
+.projects__container {
+  padding-top: 55px;
+  padding-bottom: 140px;
+}
+@media (max-width: 991.98px) {
+  .projects__container {
+    padding-bottom: 70px;
+  }
+}
+@media (max-width: 767.98px) {
+  .projects__container {
+    padding-bottom: 40px;
+  }
+}
+.projects__title {
+  margin: 0px auto 30px auto;
+}
+.projects__text {
+  text-align: center;
+  margin: 0px auto 72px auto;
+  max-width: 770px;
+}
+@media (max-width: 991.98px) {
+  .projects__text {
+    margin: 0px auto 52px auto;
+  }
+}
+.projects__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  row-gap: 60px;
+}
+@media (max-width: 767.98px) {
+  .projects__list {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 40px;
+  }
+}
+.item-projects__link {
+  display: block;
+}
+.item-projects__image {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 112.033898%;
+  border-radius: 0px 80px 0px 0px;
+  margin-bottom: 20px;
+}
+.item-projects__image > img {
+  position: absolute;
+  transition: transform 0.3s ease 0s;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.item-projects__image > img:hover {
+  transform: scale(1.2);
+}
+.item-projects__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.item-projects__title {
+  color: var(--dark-color);
+  font-family: "DM Serif Display";
+  font-size: 24px;
+}
+@media (max-width: 991.98px) {
+  .item-projects__title {
+    font-size: 22px;
+  }
+}
+.item-projects__button {
+  background: var(--light-color);
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: transform 0.3s ease 0s;
+}
+.item-projects__button:hover {
+  transform: scale(0.8);
+}
+@media (max-width: 991.98px) {
+  .item-projects__button {
+    width: 60px;
+    height: 60px;
+  }
+}
+
 .button {
   display: flex;
   align-items: center;
@@ -611,6 +710,8 @@ body {
   font-family: "Jost";
   font-size: 22px;
   color: var(--primary--color);
+  line-height: 1.5;
+  letter-spacing: 0.22px;
 }
 
 .wrapper {

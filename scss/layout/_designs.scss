@@ -89,6 +89,7 @@
         background: #F4F0EC;
         width: 93px;
         height: 93px;
+        animation: cicrle-phone 1s infinite ease;
 
         @media(max-width:991.98px) {
             width: 80px;
@@ -123,6 +124,7 @@
         letter-spacing: 0.22px;
     }
 }
+
 
 .button {}
 
@@ -164,4 +166,14 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+@keyframes cicrle-phone {
+    0% {
+        transform: scale(1.2);
+    }
+    100% {
+        opacity: 0.7;
+        transform: scale(1.1);
+    }
 }

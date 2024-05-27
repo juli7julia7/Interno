@@ -1,4 +1,7 @@
 @import './base/reset';
+@import './components/title';
+@import './components/button';
+
 @import './utils/variables';
 @import './layout/header';
 @import './layout/hero';
@@ -8,11 +11,14 @@
 @import './layout/brand';
 @import './layout/projects';
 @import './layout/statistics';
+@import './layout/blogs';
+@import './layout/join';
+@import './layout/footer';
 @import url('https://fonts.googleapis.com/css?family=Jost:regular&display=swap');
 @import url('https://fonts.googleapis.com/css?family=DM+Serif+Display:regular&display=swap');
 
-@import './components/button';
-@import './components/title';
+
+
 
 
 body {

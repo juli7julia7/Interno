@@ -1,0 +1,130 @@
+.blogs {
+
+    &__container {
+        padding-top: 140px;
+        padding-bottom: 140px;
+
+        @media(max-width:991.98px) {
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+
+        @media(max-width:767.98px) {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        max-width: 589px;
+        margin: 0 auto 70px auto;
+        text-align: center;
+        @media(max-width:767.98px){
+            margin: 0 auto 50px auto;
+        }
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(290px, 380px));
+        column-gap: 20px;
+        row-gap: 40px;
+        justify-content: center;
+    }
+
+    &__item {}
+}
+
+.title {}
+
+.title--center {}
+
+.item-blogs {
+    border-radius: 62px;
+    border: 1px solid #E7E7E7;
+    padding: 21px 21px 41px 21px;
+
+    &__link {}
+
+    &__title {
+        position: absolute;
+        bottom: 29px;
+        left: 24px;
+        z-index: 50;
+        border-radius: 8px 8px 8px 0px;
+        background: #FFF;
+        padding: 9px 10px;
+        font-size: 15px;
+
+        @media(max-width:809.98px) {
+            font-size: 18px;
+        }
+    }
+
+    &__img {
+        position: relative;
+        overflow: hidden;
+        padding-bottom: 85.797101%;
+        margin-bottom: 15px;
+        border-radius: 45px 45px 0px 0px;
+
+        /* 296/345 */
+        &>img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all 0.3s ease 0s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    &__text {
+        color: var(--dark-color);
+        font-family: "DM Serif Display";
+        font-size: 25px;
+        line-height: 1.4;
+        letter-spacing: 0.5px;
+        margin-bottom: 10px;
+        @media(max-width:809.98px){
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__wrapper-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__date {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.22px;
+    }
+
+    &__icon {
+        border-radius: 50%;
+        background: var(--light-color);
+        width: 52px;
+        height: 52px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease 0s;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}

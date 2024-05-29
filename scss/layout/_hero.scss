@@ -7,6 +7,7 @@
     @media(max-width:991.98px) {
         border-radius: 0px 0px 0px 200px;
     }
+
     @media(max-width:991.98px) {
         border-radius: 0px 0px 0px 100px;
     }
@@ -14,6 +15,11 @@
     &__container {
         padding-top: 188px;
         padding-bottom: 260px;
+
+        @media(max-width:991.98px) {
+            padding-top: 150px;
+            padding-bottom: 150px;
+        }
     }
 
     &__wrapper-content {

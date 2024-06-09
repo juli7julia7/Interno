@@ -202,6 +202,7 @@ body {
     background-color: #e4d4c2;
     padding: 150px 30px 50px 30px;
     transition: left 0.3s ease 0s;
+    overflow: hidden;
   }
   .menu-open .menu__body {
     left: 0;

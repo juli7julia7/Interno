@@ -173,6 +173,7 @@ body {
     flex: 0 0 30px;
     height: 18px;
     position: relative;
+    z-index: 50;
   }
   .icon-menu span,
   .icon-menu::before,
@@ -195,6 +196,7 @@ body {
   }
   .menu__body {
     position: fixed;
+    z-index: 4;
     top: 0;
     left: -100%;
     width: 100%;
@@ -202,7 +204,18 @@ body {
     background-color: #e4d4c2;
     padding: 150px 30px 50px 30px;
     transition: left 0.3s ease 0s;
-    overflow: hidden;
+    overflow: auto;
+  }
+  .menu__body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 70px;
+    background-color: #e4d4c2;
+    transition: left 0.3s ease 0s;
+    overflow: auto;
   }
   .menu-open .menu__body {
     left: 0;
@@ -835,7 +848,7 @@ body {
   position: absolute;
   bottom: 29px;
   left: 24px;
-  z-index: 50;
+  z-index: 1;
   border-radius: 8px 8px 8px 0px;
   background: #FFF;
   padding: 9px 10px;
@@ -1058,7 +1071,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  overflow: hidden;
+  overflow: clip;
 }
 
 .main {

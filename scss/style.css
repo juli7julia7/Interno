@@ -138,7 +138,7 @@ body {
 }
 .header__logo {
   position: relative;
-  z-index: 5;
+  z-index: 50;
 }
 .menu__list {
   display: flex;
@@ -196,7 +196,7 @@ body {
   }
   .menu__body {
     position: fixed;
-    z-index: 4;
+    z-index: 5;
     top: 0;
     left: -100%;
     width: 100%;
@@ -244,6 +244,10 @@ body {
     font-size: 40px;
   }
 }
+.scroll-off {
+  overflow: hidden;
+}
+
 .hero {
   background: url(img/hero/main.jpg) no-repeat center top/cover;
   border-radius: 0px 0px 0px 290px;
